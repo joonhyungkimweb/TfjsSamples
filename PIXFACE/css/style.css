@@ -1,0 +1,123 @@
+.card-inference {
+    box-shadow: 0 0 2rem 0 rgb(136 152 170 / 56%);
+    max-width: 500px;
+    min-width: 300px;
+}
+
+.bg-gradient-blue {
+    background: linear-gradient( 87deg, #5e72e4 0, #825ee4 100%) !important;
+}
+
+.result-canvas,
+.drawing-canvas,
+.loading-comp {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+}
+
+.file-input-label-container {
+    z-index: 1;
+}
+
+.loading-comp {
+    display: flex;
+    z-index: 2;
+}
+
+.loading-comp[data-loaded=true] {
+    display: none;
+}
+
+.canvas-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+}
+
+.result-container {
+    position: relative;
+    width: 50%;
+    padding-bottom: 50%;
+}
+
+.color-palette {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.color-block[data-color="face"] {
+    --block-color: #808080;
+}
+
+.color-block[data-color="hair"] {
+    --block-color: #ffff00;
+}
+
+.color-block[data-color="eye"] {
+    --block-color: #00ff00;
+}
+
+.color-block[data-color="eyebrow"] {
+    --block-color: #ff00ff;
+}
+
+.color-block[data-color="nose"] {
+    --block-color: #0000FF;
+}
+
+.color-block[data-color="mouth"] {
+    --block-color: #FF0000;
+}
+
+.color-block[data-color="teeth"] {
+    --block-color: #ffffff;
+}
+
+.color-block[data-color="ear"] {
+    --block-color: #00ffff;
+}
+
+.color-block {
+    background-color: var(--block-color);
+    width: 33%;
+    padding-top: 11%;
+    padding-bottom: 11%;
+    font-size: 0.85rem;
+    border: 1px solid transparent;
+}
+
+.color-block:hover,
+.color-block.selected {
+    border: 1px solid #d0d0d0;
+}
+
+.control-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.control-item,
+.erase-button,
+.line-item {
+    width: 12.5%;
+    align-self: center;
+    text-align: center;
+    opacity: 0.4;
+}
+
+.control-item:hover,
+.line-item:hover,
+.erase-button:hover,
+.control-item.selected,
+.line-item.selected {
+    opacity: 1;
+}
+
+.contents {
+    padding: 2.5%;
+}

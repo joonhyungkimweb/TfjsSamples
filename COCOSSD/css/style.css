@@ -1,0 +1,42 @@
+.card-inference {
+    box-shadow: 0 0 2rem 0 rgb(136 152 170 / 56%);
+    max-width: 500px;
+    min-width: 300px;
+}
+
+.bg-gradient-blue {
+    background: linear-gradient( 87deg, #5e72e4 0, #825ee4 100%) !important;
+}
+
+.contents {
+    padding: 2.5%;
+}
+
+.preview-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+}
+
+.webcam-preview,
+.result-canvas,
+.loading-comp {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.webcam-preview {
+    opacity: 0;
+}
+
+.loading-comp {
+    background-color: #dee2e6;
+}
+
+.flip-canvas {
+    /*-webkit-transform: scaleX(-1);*/
+    /*transform: scaleX(-1);*/
+}

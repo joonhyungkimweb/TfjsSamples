@@ -1,0 +1,68 @@
+.card-inference {
+    box-shadow: 0 0 2rem 0 rgb(136 152 170 / 56%);
+    max-width: 500px;
+    min-width: 300px;
+}
+
+.bg-gradient-blue {
+    background: linear-gradient( 87deg, #5e72e4 0, #825ee4 100%) !important;
+}
+
+.result {
+    position: relative;
+    background-color: #f0f0f0;
+    height: 33px;
+    margin-top: 2%;
+    margin-bottom: 2%
+}
+
+.result .result-bar {
+    background-color: #EE75EE;
+}
+
+.drawing-canvas,
+.loading-comp {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #dee2e6;
+}
+
+.loading-comp {
+    display: flex;
+    z-index: 1;
+}
+
+.loading-comp[data-loaded=true] {
+    display: none;
+}
+
+.canvas-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+}
+
+.contents {
+    padding: 2.5%;
+}
+
+#result-label-1,
+#result-label-2 {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    font-size: 15px;
+}
+
+#result-percentage-1,
+#result-percentage-2 {
+    font-size: 15px
+}
+
+@media (max-width: 400px) {
+    .result {
+        height: 25px;
+    }
+}
